@@ -34,6 +34,16 @@
 
 	};
 
+	// email submit form
+	// $(function() {
+	// 	$('#message-submit').click(function() {
+	// 		$('#name').html('')
+	// 		$('#email').html('')
+	// 		$('#message').html('')
+	// 		console.log('cleared')
+	// 	})
+	// })
+
 	/**
 	 * Panel-ify an element.
 	 * @param {object} userConfig User config.
@@ -433,12 +443,11 @@
 		// Events.
 			$this
 				.on('submit', function() {
-
-					$this.find('input[type=text],input[type=password],textarea')
+					$this.find('input[type=submit],input[type=password],textarea')
 						.each(function(event) {
 
 							var i = $(this);
-
+							console.log('hi')
 							if (i.attr('name').match(/-polyfill-field$/))
 								i.attr('name', '');
 
