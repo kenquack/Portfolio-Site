@@ -77,6 +77,12 @@ input, select, textarea {
 		margin-top: 2vh;
 	}
 
+	#counter {
+		position: absolute;
+		right: 0;
+		margin-right: 10px;
+	}
+
 	html {
 		box-sizing: border-box;
 	}
@@ -3223,8 +3229,3 @@ input, select, textarea {
 
 	}
 
-#counter {
-	position: absolute;
-	right: 0;
-	margin-right: 10px;
-}
